@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+.item {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: hsl(223, 100%, 50%);
+  color: #fff;
+  height: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  display: inline;
+  margin: 2em;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.item-2 {
+  margin-top: 30px;
+  display: flex;
+  gap: 2em;
+}
+
+.sobre-loja h2 {
+  border-bottom: 2px solid hsl(223, 90%, 50%);
+  color: hsl(223, 90%, 50%);
+  margin-bottom: 10px;
+}
+
+.titulo-produtos {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid hsl(223, 90%, 50%);
+  color: hsl(223, 90%, 50%);
+}
+
+.item-3 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2%;
+  margin-bottom: 30px;
+}
+button {
+  background-color: hsl(223, 90%, 50%);
+  color: #fff;
+  padding: 2%;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 992px) {
+  .item {
+    padding: 5%;
+  }
+  .item-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .item {
+    padding: 5%;
+  }
+  .item-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .item-2 {
+    display: block;
+  }
+}
